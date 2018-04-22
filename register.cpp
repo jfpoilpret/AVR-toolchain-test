@@ -3,7 +3,9 @@
 #include <avr/io.h>
 
 // This internal macro is used by individual boards headers
-#define R_(REG) ((uint16_t)&REG)
+//#define R_(REG) ((uint16_t)&REG)
+#define R_(REG) (uint16_t(__builtin_constant_p(&REG)))
+//#define R_(REG) ((uintptr_t)&REG)
 
 #define INLINE __attribute__((always_inline))
 
@@ -83,6 +85,7 @@ using REG8 = REGISTER<uint8_t>;
 using REG16 = REGISTER<uint16_t>;
 
 using REG = uint16_t;
+//using REG = uintptr_t;
 static constexpr REG NO_REG = 0xFFFF;
 	
 template<REG PIN_> struct Port_trait
