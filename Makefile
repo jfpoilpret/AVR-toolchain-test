@@ -1,5 +1,7 @@
 # Which avr-gcc to use?
+# This is the 3.5.3 or 3.5.4 toolchain: it works properly
 #AVR_PATH:=~/bin
+# This is the new 3.6.0 or 3.6.1 toolchain: it fails miserably
 AVR_PATH:=/usr/bin
 
 # Force target settings
