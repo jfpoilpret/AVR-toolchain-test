@@ -4,7 +4,7 @@
 
 // This internal macro is used by individual boards headers
 //#define R_(REG) ((uint16_t)&REG)
-#define R_(REG) (uint16_t(__builtin_constant_p(&REG)))
+#define R_(REG) (uint16_t(__builtin_constant_p(&REG) ? &REG : &REG))
 //#define R_(REG) ((uintptr_t)&REG)
 
 #define INLINE __attribute__((always_inline))
@@ -97,5 +97,6 @@ using TRAIT = Port_trait<R_(PINB)>;
 
 int main()
 {
+	TRAIT::PIN = 0xFF;
 }
 

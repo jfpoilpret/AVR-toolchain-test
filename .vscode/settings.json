@@ -1,0 +1,35 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "build": true,
+        "deps": true
+    },
+    "files.insertFinalNewline": true,
+    "editor.insertSpaces": false,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.tabSize": 4,
+    "C_Cpp.clang_format_path": "/usr/bin/clang-format",
+    "C_Cpp.autocomplete": "Default",
+    "C_Cpp.intelliSenseEngine": "Default",
+    "todohighlight.include": ["**/*.h","**/*.cpp"],
+    "todohighlight.keywords": [
+        "TODO",
+        "FIXME"
+    ],
+    "todohighlight.maxFilesForSearch": 512,
+    "todohighlight.toggleURI": false,
+    "fastarduino.general": {
+        "defaultTarget": "UNO"
+    },
+    "fastarduino.targets": {
+        "UNO": {
+            "board": "Arduino UNO",
+            "programmer": "UNO USB",
+            "serial": "/dev/ttyACM0"
+        }
+    }
+}
+
