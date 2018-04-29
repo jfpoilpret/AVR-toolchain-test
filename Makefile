@@ -18,12 +18,12 @@ TARGET:=Test
 # Where to search for source files (.cpp)
 SOURCE_ROOT:=.
 # Where FastArduino project is located (used to find library and includes)
-FASTARDUINO_ROOT=../fast-arduino-lib
+#FASTARDUINO_ROOT=../fast-arduino-lib
 # Additional paths containing includes (usually empty)
 ADDITIONAL_INCLUDES:=
 # Additional paths containing libraries other than fastarduino (usually empty)
 ADDITIONAL_LIBS:=
 
 # include generic makefile for apps
-include $(FASTARDUINO_ROOT)/Makefile-app.mk
+include ../fast-arduino-lib/Makefile-app.mk
 

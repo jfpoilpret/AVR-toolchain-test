@@ -26,9 +26,9 @@
         {
             "name": "Linux",
             "includePath": [
-                "~/avr8-gnu-toolchain-linux_x86_64/avr/include",
-                "~/avr8-gnu-toolchain-linux_x86_64/avr/include/avr",
-                "~/avr8-gnu-toolchain-linux_x86_64/lib/gcc/avr/4.9.2/include",
+                "/usr/avr/include",
+                "/usr/avr/include/avr",
+                "/usr/lib/gcc/avr/6.3.0/include",
                 "${workspaceRoot}/../fast-arduino-lib/cores",
                 "${workspaceRoot}"
             ],
